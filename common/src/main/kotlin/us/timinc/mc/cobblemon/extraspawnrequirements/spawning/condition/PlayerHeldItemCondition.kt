@@ -1,4 +1,4 @@
-package us.timinc.mc.cobblemon.extraspawnrequirements.spawningconditions
+package us.timinc.mc.cobblemon.extraspawnrequirements.spawning.condition
 
 import com.cobblemon.mod.common.api.spawning.context.SpawningContext
 import net.minecraft.resources.ResourceLocation

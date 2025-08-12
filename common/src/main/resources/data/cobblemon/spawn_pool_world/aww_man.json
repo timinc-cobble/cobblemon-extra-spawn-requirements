@@ -1,0 +1,20 @@
+{
+  "enabled": true,
+  "neededInstalledMods": [],
+  "neededUninstalledMods": [],
+  "spawns": [
+    {
+      "id": "creeper-1",
+      "entity": "minecraft:creeper",
+      "type": "living_entity",
+      "context": "grounded",
+      "bucket": "common",
+      "weight": 9000.0,
+      "condition": {
+        "neededBaseBlocks": [
+          "#cobblemon:natural"
+        ]
+      }
+    }
+  ]
+}

@@ -2,7 +2,9 @@ package us.timinc.mc.cobblemon.extraspawnrequirements
 
 import com.cobblemon.mod.common.api.spawning.condition.AppendageCondition
 import com.cobblemon.mod.common.api.spawning.condition.SpawningCondition
-import us.timinc.mc.cobblemon.extraspawnrequirements.spawningconditions.*
+import com.cobblemon.mod.common.api.spawning.detail.SpawnDetail
+import us.timinc.mc.cobblemon.extraspawnrequirements.spawning.condition.*
+import us.timinc.mc.cobblemon.extraspawnrequirements.spawning.detail.LivingEntitySpawnDetail
 import us.timinc.mc.cobblemon.timcore.AbstractConfig
 import us.timinc.mc.cobblemon.timcore.AbstractMod
 
@@ -23,5 +25,6 @@ object ExtraSpawnRequirements :
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerHealthCondition::class.java)
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerHungerCondition::class.java)
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerHeldItemCondition::class.java)
+        SpawnDetail.registerSpawnType(LivingEntitySpawnDetail.TYPE, LivingEntitySpawnDetail::class.java)
     }
 }
