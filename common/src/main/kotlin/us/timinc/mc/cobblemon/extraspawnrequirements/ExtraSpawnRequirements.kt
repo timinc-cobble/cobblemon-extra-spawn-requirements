@@ -11,8 +11,7 @@ const val MOD_ID: String = "extra_spawn_requirements"
 object ExtraSpawnRequirements :
     AbstractMod<ExtraSpawnRequirements.ExtraSpawnRequirementsConfig>(MOD_ID, ExtraSpawnRequirementsConfig::class.java) {
 
-    class ExtraSpawnRequirementsConfig : AbstractConfig() {
-    }
+    class ExtraSpawnRequirementsConfig : AbstractConfig()
 
     init {
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerAdvancementCondition::class.java)
@@ -23,5 +22,6 @@ object ExtraSpawnRequirements :
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerHealthCondition::class.java)
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerHungerCondition::class.java)
         AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerHeldItemCondition::class.java)
+        AppendageCondition.registerAppendage(SpawningCondition::class.java, PlayerPartyMember::class.java)
     }
 }
